@@ -32,7 +32,7 @@
     font-style: normal;
 }
 
-.navigation li{
+.navigation a{
     padding: 6px 12px 6px 12px;
     margin: 0px 10px 0px 10px;
     color: white;
@@ -42,7 +42,7 @@
 .nav form{
     display: flex;
 }
-.nav a{
+form a{
     text-decoration: none;
     color: white;
     font-family: 'iCielBC Downtown', sans-serif;
