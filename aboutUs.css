@@ -1,0 +1,59 @@
+*{ 
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+   }
+.container{
+    padding: 0px 12px 0px 12px;
+    background-color: rgba(110, 69, 59);
+    
+}
+.nav{
+    display: flex;
+
+    justify-content: space-between;
+    padding: 9px 0px 9px 0px;
+    margin: 0px 100px 0px 100px;
+}
+.logo{
+    width: 88px;
+    height: 40px;
+}
+.navigation{
+    display: flex;
+    list-style-type: none;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'IcielBC Downtown';
+    src: url('./font/iCielBCDowntown-Regular.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.navigation li{
+    padding: 6px 12px 6px 12px;
+    margin: 0px 10px 0px 10px;
+    color: white;
+    font-family: 'iCielBC Downtown', sans-serif;
+    font-size: 24px;
+}
+.nav form{
+    display: flex;
+}
+.nav a{
+    text-decoration: none;
+    color: white;
+    font-family: 'iCielBC Downtown', sans-serif;
+    font-size: 28px;
+    padding-left: 10px;
+    padding-top: 3px;
+}
+.nav input{
+    width: 225px;
+    height: 24px;
+    border-radius: 5px;
+    background-color: #d8bfa4;
+    padding: 6px 12px 6px 12px;
+}
