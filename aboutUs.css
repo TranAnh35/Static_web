@@ -1,21 +1,21 @@
+/* reset css */
 *{ 
     margin: 0;
     padding: 0;
     border: 0;
     font-size: 100%;
 }
-
-.container{
+/* nav bar */
+.nav-container{
     padding: 0px 12px 0px 12px;
     background-color: rgba(110, 69, 59);
     
 }
-.nav{
+.nav_bar{
     display: flex;
-
     justify-content: space-between;
     padding: 9px 0px 9px 0px;
-    margin: 0px 100px 0px 100px;
+    margin: 0px 288px 0px 288px;
 }
 .logo{
     width: 88px;
@@ -41,7 +41,9 @@
     font-size: 24px;
     text-decoration: none;
 }
-.nav form{
+.nav_bar form{
+    margin-top: 1px;
+    margin-right: 5px;
     display: flex;
 }
 form a{
@@ -52,8 +54,8 @@ form a{
     padding-left: 10px;
     padding-top: 3px;
 }
-.nav input{
-    width: 225px;
+.nav_bar input{
+    width: 201px;
     height: 24px;
     border-radius: 5px;
     background-color: #d8bfa4;
@@ -61,4 +63,121 @@ form a{
 }
 .a{
     width: 10px;
+}
+/* first */
+.wide-banner.first {
+    background-image: url(./img/cau-long-bien.jpg);
+    height: 300px;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% auto;
+}
+
+.title-bg-image {
+    position: relative;
+}
+
+.title-bg-image span {
+    font-size: 50px;
+    font-weight: bold;
+    color:rgba(110, 69, 59);
+    position: relative; 
+    z-index: 2;  
+    font-family: 'iCielBC Downtown', sans-serif;
+}
+
+.title-bg-image:after {
+    content: '';
+    width: 320px;
+    height: 100px;
+    left: 50%;
+    bottom: -20px;
+    background-image: url(./img/bottom-title.png);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: contain;
+    position: absolute;
+    transform: translate(-50%, 0);
+    z-index: 1;
+}
+.description{
+    font-size: 20px;
+    color: rgba(110, 69, 59);
+}
+/* Second */
+.main-container-second{
+    background-image: url(./img/aboutus/imgmmm.jpg);
+    height: 480px;
+    width: 100%;
+    display: flex;
+    place-items: center;
+    background-position: center center;
+    background-size: 100% auto;
+    justify-content: center;
+}
+.mid_2 img{
+    width: 636px;
+    height: 368px;
+    padding: 0px 10px;
+    border-radius: 10px;
+}
+.mid_1{
+    width: 636px;
+    height: 368px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    text-align: start;
+    padding: 0px 10px;
+}
+.boderimg{
+    border-radius: 10px;
+}
+.mid_1 h1{
+    font-size: 20px;
+    color: rgba(110, 69, 59);
+}
+/* three */
+.main-container-three{
+    background-image: url(./img/noise-black.png);
+    height: 901px;
+    width: 100%;
+    display: flex;
+    place-items: center;
+    background-position: center center;
+    background-size: 100% auto;
+    justify-content: center;
+    background-color: #d8bfa4;
+}
+.main-container-three { 
+    text-align: start;
+}
+
+.main-container-three img {
+    width: 1037px;
+    height: 583px;
+    border-radius: 20px;
+    margin: 0 auto;
+    display: block;
+}
+
+.text-center-three{
+    width: 1296px;
+    height: 795px;
+}
+/* 4 */
+.main-container-four{
+    background-image: url(./img/aboutus/bg-about-2.webp);
+    height: 901px;
+    width: 100%;
+    display: flex;
+    place-items: center;
+    background-position: center center;
+    background-size: 100% auto;
+    justify-content: center;
 }
