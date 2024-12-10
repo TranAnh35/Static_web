@@ -4,6 +4,11 @@
     src: url('font/iCielBCDowntown-Regular.otf') format('opentype');
 }
 
+@font-face {
+    font-family: 'SFProDisplay';
+    src: url('font/sf-pro-display-cufonfonts/SFPRODISPLAYREGULAR.OTF') format('opentype');
+}
+
 /* Reset default styles */
 * {
     margin: 0;
@@ -98,17 +103,274 @@ body {
  * main
  * ***************************/
 
+/* *Home */
+
  .home-top {
     width: 100%;
-    height: 100vh;
+    height: 700px;
 }
 
 .home-top img {
     width: 100%;
     height: 100%;
-    object-fit: contain;
 }
 
+/* *About Us */
+
+.about-us {
+    position: relative;
+    width: 100%;
+    height: 617px;
+    padding: 80px 0;
+    background-image: url("img/download.jpg");
+    background-position: center center;
+    background-size: cover;
+}
+
+.about-us::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("img/noise-black.png");
+    background-position: center center;
+    background-size: contain;
+    opacity: 0.3;
+    z-index: 2;
+}
+
+.about-us > * {
+    position: relative;
+    z-index: 1;
+}
+
+.container {
+    padding: 0 12px;
+    margin: 0 auto;
+    max-width: 1320px;
+}
+
+.about-us-title {
+    text-align: center;
+    font-size: 40px;
+    color: rgb(110, 69, 59);
+    margin: 0 0 24px;
+}
+
+.about-us-title-image::after {
+    content: '';
+    width: 250px;
+    height: 100%;
+    left: 50%;
+    bottom: 87%;
+    background-image: url("img/bottom-title.png");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: contain;
+    position: absolute;
+    transform: translate(-50%, 0);
+}
+
+.about-us-title-image span {
+    position: relative;
+    z-index: 2;
+}
+
+.about-us-row {
+    display: flex;
+    align-items: center;
+    margin: 0 -12px;
+}
+
+.about-us-col {
+    flex: 1;
+    padding: 0 12px;
+    max-width: 100%;
+}
+
+.col-content {
+    margin: 8px 0;
+}
+
+.col-content h1{
+    margin: 0 0 8px;
+}
+
+.col-content h1 span {
+    font-weight: bolder;
+    color: rgb(110, 69, 59);
+    font-size: 34px;
+    font-weight: 700;
+}
+
+.col-content h2{
+    margin: 10px 0 6px;
+}
+
+.col-content h2 span {
+    font-weight: bolder;
+    color: rgb(110, 69, 59);
+    letter-spacing: 1.2px;
+    font-size: 20px;
+}
+
+.col-content p{
+    font-family: "SFProDisplay";
+    margin-bottom: 10px;
+}
+
+.about-us-col img {
+    width: 636px;
+}
+
+/* *Cuisine */
+
+.cuisine {
+    position: relative;
+    width: 100%;
+    height: 797px;
+    padding: 80px 0px;
+    background-color: #e7dbdb;
+}
+
+.cuisine::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("img/noise-black.png");
+    background-position: center center;
+    background-size: contain;
+    opacity: 0.3;
+    z-index: 2;
+}
+
+.cuisine > * {
+    position: relative;
+    z-index: 1;
+}
+
+.cuisine-title {
+    text-align: center;
+    font-size: 40px;
+    color: rgb(110, 69, 59);
+    margin: 0 0 24px;
+}
+
+.cuisine-title-image::after {
+    content: '';
+    width: 250px;
+    height: 100%;
+    left: 50%;
+    bottom: 44%;
+    background-image: url("img/bottom-title.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    position: absolute;
+    transform: translate(-50%, 0);
+}
+
+.cuisine-title {
+    margin-bottom: 24px;
+}
+
+.cuisine-title-image span {
+    position: relative;
+    z-index: 2;
+}
+
+.cuisine-row {
+    margin: 0 -12px;
+    display: flex;
+}
+
+.cuisine-col {
+    flex: 1;
+    margin: 24px 0;
+    padding: 0 12px;
+}
+
+.cuisine-item {
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px;
+}
+
+.cuisine-image {
+    display: flex;
+    margin-bottom: 17px;
+    justify-content: center;
+}
+
+.cuisine-image img {
+    max-width: 85%;
+}
+
+.cuisine-content-text {
+    text-transform: uppercase;
+    font-size: 34px;
+    color: rgb(110, 69, 59);
+}
+
+.cuisine-content p {
+    font-family: "SFProDisplay", sans-serif;
+    font-size: 17px;
+}
+
+.cuisine-col:nth-child(2) .cuisine-item {
+    flex-direction: column-reverse;
+}
+
+.cuisine-col:nth-child(4) .cuisine-item {
+    flex-direction: column-reverse;
+}
+
+.cuisine-col:nth-child(2) .cuisine-image,
+.cuisine-col:nth-child(4) .cuisine-image {
+    margin-bottom: 0;
+    margin-top: 17px;
+}
+
+/* *Restaurant space */
+
+.restaurant-space {
+    position: relative;
+    width: 100%;
+    height: 797px;
+    padding: 80px 0px;
+    background-image: url("img/aboutus/custom-bg.jpg");
+}
+
+.restaurant-space::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("img/noise-black.png");
+    background-position: center center;
+    background-size: contain;
+    opacity: 0.3;
+    z-index: 2;
+}
+
+.restaurant-space > * {
+    position: relative;
+    z-index: 1;
+}
+
+.restaurant-space-title {
+    text-align: center;
+    font-size: 40px;
+    color: rgb(110, 69, 59);
+    margin: 0 0 24px;
+}
 
 /* ****************************
  * footer
@@ -116,7 +378,7 @@ body {
 
 #footer {
     background-color: rgb(110, 69, 59);
-    font-family: 'SFProDisplay';
+    font-family: "SFProDisplay", sans-serif;
     color: white;
     padding: 16px 0;
 }
@@ -128,7 +390,6 @@ body {
 
 .row {
     display: flex;
-    
 }
 
 .col {
